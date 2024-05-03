@@ -8,6 +8,6 @@ def driver():
     options = Options()
     options.add_argument("--window-size=1920,1080")
     driver = webdriver.Chrome(options=options)
-    driver.get(UrlList.page_main_url)
+    driver.get(UrlList.BASE_URL)
     yield driver
     driver.quit()

@@ -6,6 +6,6 @@ class Data:
 
 # Список URL для перехода на нужные страницы
 class UrlList:
-    page_main_url = "https://stellarburgers.nomoreparties.site/"  # URL главной страницы Конструктор
-    page_login_url = "https://stellarburgers.nomoreparties.site/login"  # URL страницы логин
-    page_registration_url = "https://stellarburgers.nomoreparties.site/register" # URL страницы регистрации
+    BASE_URL = "https://stellarburgers.nomoreparties.site/"  # URL главной страницы Конструктор
+    AUTH_PAGE_URL = "https://stellarburgers.nomoreparties.site/login"  # URL страницы логин
+    REG_PAGE_URL = "https://stellarburgers.nomoreparties.site/register" # URL страницы регистрации

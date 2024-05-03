@@ -7,7 +7,7 @@ from conftest import driver
 class TestConstructorRedirects:
     # Проверка перехода по клику на «Конструктор» и на логотип Stellar Burgers
     def test_go_to_constructor_from_account(self, driver):
-        driver.get(UrlList.page_login_url)
+        driver.get(UrlList.AUTH_PAGE_URL)
         driver.find_element(*Locators.input_email_field).send_keys(Data.email)
         driver.find_element(*Locators.input_password_field).send_keys(Data.password)
         driver.find_element(*Locators.login_button_login_page).click()
